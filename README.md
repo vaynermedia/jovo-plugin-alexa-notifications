@@ -16,6 +16,27 @@ const app = new App();
 app.register(new AlexaNotifications());
 ```
 
+When formatting your outbound message, this Jovo Plugin expects two key-value pairs on your message's `data` object: a `displayInfo` object and a `spokenInfo` object. Consider the below example `data` object:
+
+```json
+{
+	"displayInfo": {
+		"locale": "en-US",
+		"toast": {
+			"primaryText": "Pizza Party Order Update"
+		},
+		"title": "Pizzas Are On Their Way",
+		"bodyItems": [{
+			"primaryText": "Your pizzas are baked, boxed and inbound to your door! Estimated delivery is 10 minutes."
+		}]
+	},
+	"spokenInfo": {
+		"locale": "en-US",
+		"ssml": "<ssml><p>This is your Pizza Party coordinator, letting you know that your pizzas are baked, boxed and inbound to your door. Estimated delivery is 10 minutes.</p></ssml>"
+	}
+}
+```
+
 ## Advanced Options
 
 The default expiration time is 60 seconds, but you can manually set this using the `options` object:

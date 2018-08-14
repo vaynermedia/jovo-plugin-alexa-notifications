@@ -8,9 +8,7 @@ class AlexaNotifications extends Plugin {
         super(options);
 		this.uri = 'https://api.amazonalexa.com/v2/notifications';
 
-		if (options) {
-			this.expiresAfterSeconds = options.expiresAfterSeconds || 60;
-		}
+		this.expiresAfterSeconds = options && options.expiresAfterSeconds || 60;
     }
 
     init() {
@@ -52,7 +50,6 @@ class AlexaNotifications extends Plugin {
 	        body,
 	        json: true
 	    })
-		.then(res => console.log('RESPONSE', res))
 		.catch(err => {
 			console.log('USER NOTIFICATION SEND ERR', err.message);
 			return [];
