@@ -6,7 +6,7 @@
 
 First, be sure your Alexa skill's permissions includes [notifications](https://developer.amazon.com/docs/custom-skills/notifications-and-permissions-reference-for-custom-skills.html).
 
-Then, add the p
+Then, add the plugin:
 
 ```js
 const { App } = require('jovo-framework');
@@ -18,7 +18,7 @@ app.register(new AlexaNotifications());
 
 ## Advanced Options
 
-You can manually set the expiration time in seconds when you register this plugin. The default expiration time is 60 seconds.
+The default expiration time is 60 seconds, but you can manually set this using the `options` object:
 
 ```js
 const options = { expiresAfterSeconds: 120 }
