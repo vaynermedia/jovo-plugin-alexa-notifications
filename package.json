@@ -1,0 +1,27 @@
+{
+    "name": "jovo-plugin-alexa-messages",
+    "version": "1.0.0",
+    "description": "Handle and Create Alexa Notifications in your Jovo skill with just two lines of code",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "jovo",
+        "plugin",
+        "alexa",
+        "messages",
+        "alexa messages",
+        "message api"
+    ],
+    "author": "VaynerMedia",
+    "license": "MIT",
+    "dependencies": {
+        "crypto": "^1.0.1",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.2"
+    },
+    "peerDependencies": {
+        "jovo-framework": "^1.4.3"
+    }
+}
