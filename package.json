@@ -3,6 +3,11 @@
     "version": "1.0.0",
     "description": "Handle and Create Alexa Notifications in your Jovo skill with just two lines of code",
     "main": "index.js",
+    "respository": {
+        "type": "git",
+        "url": "https://github.com/vaynermedia/jovo-plugin-alexa-notifications"
+    },
+    "homepage": "https://github.com/vaynermedia/jovo-plugin-alexa-notifications#readme",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -14,7 +19,11 @@
         "alexa messages",
         "message api"
     ],
-    "author": "VaynerMedia",
+    "author": {
+        "name": "VaynerMedia",
+        "email": "developers@vaynermedia.com",
+        "url": "http://vaynermedia.com/"
+    },
     "license": "MIT",
     "dependencies": {
         "crypto": "^1.0.1",
